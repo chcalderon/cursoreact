@@ -5,7 +5,7 @@ export const TodoAdd = ({onNewTodo}) => {
     const {description, onInputChange, onResetForm } = useForm({
         description: ''
     });
-    console.log(description);
+    // console.log(description);
     const onFormSubmit = (event)=>{
         event.preventDefault();
         if (description.length <=1 ) return;
