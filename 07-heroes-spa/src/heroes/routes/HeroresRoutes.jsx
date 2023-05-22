@@ -5,20 +5,22 @@ import { DcPage, HeroPage, MarvelPage, SearchPage } from "../pages";
 export const HeroresRoutes = () => {
   return (
     <>
-        <Navbar/>
+      <Navbar />
+      <div className='container'>
 
         <Routes>
-        <Route path="marvel" element={<MarvelPage />}/>
-        <Route path="dc" element={<DcPage />} />
-        
-        <Route path="search" element={<SearchPage />} />
-        <Route path="hero" element={<HeroPage />} />
+          <Route path="marvel" element={<MarvelPage />} />
+          <Route path="dc" element={<DcPage />} />
 
-        {/* Search, Hero by id */}
+          <Route path="search" element={<SearchPage />} />
+          <Route path="hero" element={<HeroPage />} />
 
-        <Route path="/" element={<Navigate to="/marvel" />} />
+          {/* Search, Hero by id */}
 
-      </Routes>
+          <Route path="/" element={<Navigate to="/marvel" />} />
+
+        </Routes>
+      </div>
     </>
   )
 }

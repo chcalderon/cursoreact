@@ -5,8 +5,6 @@ import { LoginPage } from '../auth';
 export const AppRouter = () => {
   return (
     <>
-      <div className='container'>
-
         <Routes>
           <Route path="login" element={<LoginPage />} />
 
@@ -15,8 +13,6 @@ export const AppRouter = () => {
           {/* <Route path="*" element={<NoMatch />} /> */}
           {/* </Route> */}
         </Routes>
-
-      </div>
     </>
   )
 }
