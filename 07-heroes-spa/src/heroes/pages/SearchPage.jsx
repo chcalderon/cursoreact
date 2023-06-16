@@ -74,7 +74,7 @@ export const SearchPage = () => {
                 <HeroCard key={hero.id} {...hero} />
               ))
             }
-            {/*  */}
+            
           </div>
 
        </div>
