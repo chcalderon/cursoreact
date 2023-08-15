@@ -24,11 +24,11 @@ export const useCalendarStore = () => {
             //Creando
             dispatch( onAddNewEvent({...calendarEvent, _id: new Date().getTime() }) )
         }
-    }
+    };
 
-    const deleteEvent = async() => {
+    const startDeletingEvent = async() => {
         dispatch(onDeleteEvent())
-    }
+    };
 
     return {
         //* propiedades
@@ -38,6 +38,6 @@ export const useCalendarStore = () => {
         //* Metodos
         setActiveEvent,
         startSavingEvent,
-        deleteEvent,
+        startDeletingEvent,
     }
 }
